@@ -1,23 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import Nav from './components/Nav.js';
+// import Container from 'react-bootstrap/Container';
+// import Nav from 'react-bootstrap/Nav';
+// import Navbar from 'react-bootstrap/Navbar';
+import bootstrap from 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './components/Header';
+import About from './components/About';
+import Project from './components/Project';
+import Resume from './components/Resume';
+import Contact from './components/Contact';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <Header /> */}
+      {/* <Navbar className="navBar">
+        <Container>
+          <Navbar.Brand href="#home">Erik</Navbar.Brand>
+          <Nav className="right-side-nav-bar">
+            <Nav.Link href="#about">About</Nav.Link>
+            <Nav.Link href="#contact">Contact</Nav.Link>
+            <Nav.Link href="#resume">Resume</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar> */}
+      <Nav />
+      <About />
+      <Project />
+      <Contact />
+      <Resume />
     </div>
   );
 }
