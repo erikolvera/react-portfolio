@@ -6,8 +6,6 @@ export default function card({name, description,link, github}) {
         <h2>{name}</h2>
         <p style={{fontWeight:'bold'}}>{description}</p>
         <a href={link}>{link}</a>
-        <a href={github}>{github}</a>
-
     </div>
   )
 }

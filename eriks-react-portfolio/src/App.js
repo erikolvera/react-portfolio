@@ -9,28 +9,35 @@ import About from './components/About';
 import Project from './components/Project';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
+import { BrowserRouter as Router, Routes, Route, useParams } from 'react-router-dom';
+import Footer from './components/Footer';
+{/* <Header /> */ }
+{/* <Navbar className="navBar">
+  <Container>
+    <Navbar.Brand href="#home">Erik</Navbar.Brand>
+    <Nav className="right-side-nav-bar">
+      <Nav.Link href="#about">About</Nav.Link>
+      <Nav.Link href="#contact">Contact</Nav.Link>
+      <Nav.Link href="#resume">Resume</Nav.Link>
+    </Nav>
+  </Container>
+</Navbar> */}
 
 
 
 function App() {
   return (
     <div>
-      {/* <Header /> */}
-      {/* <Navbar className="navBar">
-        <Container>
-          <Navbar.Brand href="#home">Erik</Navbar.Brand>
-          <Nav className="right-side-nav-bar">
-            <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
-            <Nav.Link href="#resume">Resume</Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar> */}
-      <Nav />
-      <About />
-      <Project />
-      <Contact />
-      <Resume />
+      <Router>
+        <Nav />
+        <Routes>
+          <Route path='/' element={<About />} />
+          <Route path='/portfolio' element={<Project />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/resume' element={<Resume />} />
+        </Routes>
+        <Footer />
+      </Router>
     </div>
   );
 }

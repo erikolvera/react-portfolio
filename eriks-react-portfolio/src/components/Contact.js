@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
 const Contact = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [name, setName] = useState(null);
+  const [email, setEmail] = useState(null);
+  const [message, setMessage] = useState(null);
 
   const handleNameChange = (e) => {
     setName(e.target.value);
@@ -22,7 +22,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="max-w-lg mx-auto mt-10">
+    <div className="h-screen max-w-lg mx-auto mt-10">
       <h1 className="text-2xl font-bold mb-5">Contact Me!</h1>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">

@@ -6,10 +6,16 @@ export default function Resume() {
         window.open(resumeUrl, '_blank')
     };
   return (
-    <div className='resume'>
-      <h1>Resume</h1>
-      <p></p>
-      <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded' onClick={handleDownloadResume}>Download my resume!</button>
+
+    <div className='resume h-screen grid justify-items-center'>
+      <div className='pt-10 resume-header'>
+        <h1>Get to know me more!</h1>
+        <hr />
+        <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ' onClick={handleDownloadResume}>Download my resume</button>
+      </div>
+      <div>
+
+      </div>
     </div>
   )
 }

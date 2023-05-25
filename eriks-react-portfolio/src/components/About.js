@@ -1,30 +1,19 @@
-import React, { useState} from 'react'
+import React from 'react';
 
 export default function About() {
-  const [page, setPage] = useState('About');
-  if (page === 'About') {
-<button onClick={() => setPage('Project')}>Hello!</button>
-        return (
-          <div style={{ display: 'flex' }}>
-          <div style={{ flex: 1 }}>
-            <img className='image' src="assets/head-picture.jpeg" alt="Erik Olvera" />
-          </div>
-          <div style={{ flex: 1 }}>
-            <h1 className='pt-10'>Hello I am Erik!</h1>
-          <p className='pt-10 text-2xl'>
-            I am full-stack web developer with a passion for learning and to continously imporove my skills. I'm currently in the University of California Irvine coding boot camp, 
-            and I'm excited to continue to grow my skills and knowledge as a developer.
-          </p>
-          </div>
+  return (
+    <div className="flex justify-center items-center mt-16 md:mt-0 h-screen">
+      <div className="flex flex-col md:flex-row">
+        <div>
+          <img className="image" src="assets/head-picture.jpeg" alt="Erik Olvera" />
         </div>
-  )
-} else {
-  return (<button onClick={() => setPage('About')}>Project!</button>)
-  
-}
-
-
-
-
-  
+        <div className="mt-4 md:mt-0 md:ml-10">
+          <h1 className="text-4xl font-bold">Hello, I am Erik!</h1>
+          <p className="text-xl mt-4">
+            I am a full-stack web developer with a passion for learning and continuously improving my skills. Currently, I am attending the University of California Irvine coding boot camp, and I'm excited to continue growing my skills and knowledge as a developer.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
 }
