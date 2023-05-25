@@ -4,22 +4,49 @@ const Contact = () => {
   const [name, setName] = useState(null);
   const [email, setEmail] = useState(null);
   const [message, setMessage] = useState(null);
-
+  const [nameError, setNameError] = useState(null);
+  const [emailError, setEmailError] = useState(null);
+  const [messageError, setMessageError] = useState(null);
+  
   const handleNameChange = (e) => {
     setName(e.target.value);
+    setNameError(null);
   };
-
+  
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
+    setEmailError(null);
   };
-
+  
   const handleMessageChange = (e) => {
     setMessage(e.target.value);
+    setMessageError(null);
   };
-
+  
   const handleSubmit = (e) => {
     e.preventDefault();
+  
+    if (!name) {
+      setNameError("Please enter your name.");
+    }
+  
+    if (!email) {
+      setEmailError("Please enter your email.");
+    }
+  
+    if (!message) {
+      setMessageError("Please enter a message.");
+    }
+  
+    if (name && email && message) {
+      alert("Thank you for your message!");
+      setName("");
+      setEmail("");
+      setMessage("");
+    }
+    
   };
+  
 
   return (
     <div className="h-screen max-w-lg mx-auto mt-10">
