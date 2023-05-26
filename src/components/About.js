@@ -1,4 +1,5 @@
 import React from 'react';
+import headPicutre from '/assets/head-picture.jpeg';
 
 export default function About() {
   return (

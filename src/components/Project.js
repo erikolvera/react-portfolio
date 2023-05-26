@@ -1,4 +1,10 @@
 import React, { useState } from 'react'
+import noteTaker from './assets/note-taker.png';
+import teamProfileGenerator from './assets/team-profile-generator.png';
+import socialNetworkApi from './assets/social-network-api.png';
+import eCommerceBackend from './assets/e-commerce-backend.png';
+import gettingWildRescue from './assets/getting-wild-rescue.png'; 
+import codeQuiz from './assets/code-quiz.png';
 // import Card from './card';
 
 export default function Project() {
