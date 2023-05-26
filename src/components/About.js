@@ -5,7 +5,7 @@ export default function About() {
     <div className="flex justify-center items-center mt-16 md:mt-0 h-screen">
       <div className="flex flex-col md:flex-row">
         <div>
-          <img className="image" src="assets/head-picture.jpeg" alt="Erik Olvera" />
+          <img className="image" src="./react-portfolio/assets/head-picture.jpeg" alt="Erik Olvera" />
         </div>
         <div className="mt-4 md:mt-0 md:ml-10">
           <h1 className="text-4xl font-bold">Hello, I am Erik!</h1>
