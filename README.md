@@ -27,4 +27,5 @@ Screenshot
 https://github.com/erikolvera/react-portfolio
 
 ## Deployed link
+https://erikolvera.github.io/react-portfolio
 
