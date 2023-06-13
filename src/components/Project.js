@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import noteTaker from './assets/note-taker.png';
-import teamProfileGenerator from './assets/team-profile-generator.png';
 import socialNetworkApi from './assets/social-network-api.png';
 import eCommerceBackend from './assets/e-commerce-backend.png';
 import gettingWildRescue from './assets/getting-wild-rescue.png'; 
 import codeQuiz from './assets/code-quiz.png';
+import FNF from './assets/FNF.jpeg';
 // import Card from './card';
 
 export default function Project() {
@@ -18,10 +18,10 @@ export default function Project() {
         },
         {
             id: 1,
-            repo: 'https://github.com/erikolvera/team-profile-generator',
-            name: 'Team Profile Generator',
-            description: 'Using this application, you can make a quick and easy html file to make your own employee team. You will be prompted a few questions, answer them, and the html page will create itself!',
-            image: teamProfileGenerator,
+            repo: 'https://github.com/Bentto90/fitness-app',
+            name: 'Fit, Not Fat',
+            description: 'This is a fitness app that allows users to create a workout plan and track their progress. The user can create a workout plan and add exercises to it. The user can also view their progress on a dashboard. The user can also view their last workout and add exercises to it.',
+            image: FNF,
         },
         {
             id: 2,
